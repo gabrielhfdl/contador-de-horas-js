@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Henrique Felipe de Lima</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <!--- Header utilizando bootstrap  -->
+    <header>
+        <h3>Controle de horas trabalhadas<br>
+            <small class="text-">Descubra quanto tempo você já trabalhou hoje. </small>
+        </h3>
+    </header>
+
+    <!--- Criando uma div que irá receber o horário de entrada, saída e o botão de calcular, que foi importado do bootstrap!  -->
+    <div id="container">
+        <form>
+            <p>Horário de início: <input type="time" id="txt1"></p>
+            <p>Horário de saída: <input type="time" id="txt2"></p>
+            <div class="col text-center ">
+                <button type="button" class="btn btn-dark" onclick="calcular()">Calcular</button>
+            </div>
+            <!--- Criando uma outra div que irá receber o conteúdo do resultado -->
+            <div id='res'>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <br>Desenvolvido por Gabriel H. F. Lima
+    </footer>
+
+    <!--- Referenciando o arquivo .script com as funções em JavaScript-->
+    <script src="scripts.js"></script>
+</body>
+
+</html>
